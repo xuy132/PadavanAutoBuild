@@ -1,4 +1,4 @@
-name: Build R6800 Padavan Firmware
+name: Build R6800 zdy Firmware
 
 on: 
   workflow_dispatch:
@@ -105,16 +105,16 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_TTYD=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_NANO=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DUMP1090=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_RTL_SDR=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=yn >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=n" >> .config
@@ -128,7 +128,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config #ddnsto  ~0.5M
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config #smartdns二进制文件
-        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config
         
         echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config #DNSFORWARDER
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config #adbyby plus+
